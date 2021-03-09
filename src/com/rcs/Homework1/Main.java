@@ -10,9 +10,9 @@ public class Main {
                 "un tie būs pārveidoti uz Celsija grādiem!");
         System.out.print("Lūdzu, ievadiet Fārenhaita grādus: ");
         Scanner scan = new Scanner(System.in);
-        Double f = scan.nextDouble();
+        double f = scan.nextDouble();
         scan.close();
-        Double c = 5 * (f - 32) / 9;
+        double c = 5 * (f - 32) / 9;
         System.out.println(f + " Fārenhaita grādi ir " + c + " Celsija grādi");
     }
 }
