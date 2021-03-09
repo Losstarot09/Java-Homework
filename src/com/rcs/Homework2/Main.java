@@ -12,9 +12,9 @@ public class Main {
                 "un programma pateiks vai šis punkts atrodas ārpusē, iekšienē vai uz līnijas!");
         System.out.print("Lūdzu, ievādiet X koordināti: ");
         Scanner read = new Scanner(System.in);
-        Double x = read.nextDouble();
+        double x = read.nextDouble();
         System.out.print("Lūdzu, ievādiet Y koordināti: ");
-        Double y = read.nextDouble();
+        double y = read.nextDouble();
         read.close();
         System.out.printf("Jūsu koordināte (%s; %s) atrodas ", x, y);
 
