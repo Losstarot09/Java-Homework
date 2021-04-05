@@ -20,17 +20,18 @@ public class HelloUser {
             }
         }
         read.close();
-        String name = nameSurname.toUpperCase().charAt(0) +
-                nameSurname.substring(1, nameSurname.toLowerCase().indexOf(" "));
+        String name = "'" + nameSurname.toUpperCase().charAt(0) +
+                nameSurname.toLowerCase().substring(1, nameSurname.indexOf(" ")) + "'";
         System.out.println(name);
         String surname = nameSurname.toUpperCase().substring(nameSurname.indexOf(" ") + 1);
 
         if (surname.contains(" ")) {
-            String surname2 = surname.substring(surname.indexOf(" ") + 1);
-            surname = surname.substring(0, surname.indexOf(" "));
+            String surname2 = "'" + surname.substring(surname.indexOf(" ") + 1) + "'";
+            surname = "'" + surname.substring(0, surname.indexOf(" ")) + "'";
             System.out.println(surname);
             System.out.println(surname2);
         } else {
+            surname = "'" + surname + "'";
             System.out.println(surname);
         }
     }
